@@ -1,11 +1,16 @@
 <html>
 
 <head>
-    <title>hello</title>
+    <title></title>
 </head>
 
 <body>
-    <p>hello</p>
+    <p></p>
+    <script>
+document.querySelector('title').innerText = window.location.pathname;
+document.querySelector('p').innerText = window.location.pathname;
+document.querySelector('script').remove();
+    </script>
 </body>
 
 </html>

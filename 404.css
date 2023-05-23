@@ -17,8 +17,13 @@ body {
     text-align: center;
 }
 
-.main {
+.main  {
     font-size: 100px;
+}
+
+span {
+    transition: all 1s ease-in-out;
+    display: inline-block;
 }
 
 .home {

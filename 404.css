@@ -6,6 +6,7 @@
 }
 
 body {
+    cursor: none;
     background-color: #131313;
     display: flex;
     justify-content: center;
@@ -28,7 +29,7 @@ span {
 }
 
 .home {
-    background-color: #161616;
+    background-color: #202020;
     padding: 10px;
     border-radius: 10px;
     font-size: 50px;
@@ -43,7 +44,7 @@ span {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #161616;
+    background-color: #202020;
     position: absolute;
     pointer-events: none;
 }

@@ -41,7 +41,7 @@ span {
 }
 
 .effect {
-    display: none;
+    visibility:hidden;
     width: 40px;
     height: 40px;
     border-radius: 50%;

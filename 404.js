@@ -18,6 +18,7 @@ cursorEffect = (() => {
 })();
 
 document.addEventListener('mousemove', (e) => {
+    cursorEffect.style.display = '';
     cursorEffect.style.left = e.x - 20 + 'px';
     cursorEffect.style.top = e.y - 20 + 'px';
 });

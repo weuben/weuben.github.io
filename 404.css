@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fira%20Code');
 
 * {
+    cursor: none;
     color: white;
     font-family: 'Fira Code';
 }
 
 body {
-    cursor: none;
     background-color: #131313;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ span {
 }
 
 .home {
-    background-color: #202020;
+    background-color: #161616;
     padding: 10px;
     border-radius: 10px;
     font-size: 50px;

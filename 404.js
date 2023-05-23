@@ -9,3 +9,15 @@ span.forEach(el => {
         }
     });
 });
+
+cursorEffect = (() => {
+    let el = document.createElement('div');
+    el.classList.add('effect');
+    document.body.appendChild(el);
+    return el;
+})();
+
+document.addEventListener('mousemove', (e) => {
+    cursorEffect.style.left = e.x - 20 + 'px';
+    cursorEffect.style.top = e.y - 20 + 'px';
+});

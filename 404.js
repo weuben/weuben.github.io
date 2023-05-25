@@ -1,24 +1,17 @@
-span = document.querySelectorAll('span')
+span = document.querySelectorAll('span');
+var lastEl;
 
-span.forEach(el => {
-    el.addEventListener('mouseover', () => {
-        if (el.style.transform === 'rotateY(0deg)') {
-            el.style.transform = 'rotateY(180deg)';
-        } else {
-            el.style.transform = 'rotateY(0deg)';
-        }
-    });
-});
-
-cursorEffect = (() => {
-    let el = document.createElement('div');
-    el.classList.add('effect');
-    document.body.appendChild(el);
-    return el;
+(rotat = () => {
+    let el = span[Math.floor(Math.random() * span.length)];
+    while (el === lastEl) {
+        el = span[Math.floor(Math.random() * span.length)];
+    };
+    if (el.style.transform === 'rotateY(0deg)') {
+        el.style.transform = 'rotateY(180deg)';
+    } else {
+        el.style.transform = 'rotateY(0deg)';
+    };
+    lastEl = el;
 })();
 
-document.addEventListener('mousemove', (e) => {
-    cursorEffect.style.visibility = 'visible';
-    cursorEffect.style.left = e.x - 20 + 'px';
-    cursorEffect.style.top = e.y - 20 + 'px';
-});
+setInterval(rotat, 500);

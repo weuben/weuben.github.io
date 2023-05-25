@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fira%20Code');
 
 * {
-    cursor: none;
     color: white;
     font-family: 'Fira Code';
 }
@@ -38,14 +37,4 @@ span {
 
 .home:visited {
     color: white;
-}
-
-.effect {
-    visibility:hidden;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #202020;
-    position: absolute;
-    pointer-events: none;
 }

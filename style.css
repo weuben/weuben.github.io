@@ -1,10 +1,29 @@
 @import url('https: //fonts.googleapis.com/css?family=Fira%20Code');
 
 * {
-    color: white;
+    color: #fff;
     font-family: 'Fira Code';
 }
 
 body {
     background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text-effect {
+    font-size: 50px;
+    user-select: none;
+}
+
+.text-effect span {
+    filter: blur(3px);
+    display: inline-block;
+    transition: all .5s;
+}
+
+.text-effect span:hover {
+    filter: blur(0);
 }

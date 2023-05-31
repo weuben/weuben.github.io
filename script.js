@@ -1,2 +1,1 @@
-number = ${{shared.number}};
-console.log(number)
+console.log('ha gaaaay')

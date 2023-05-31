@@ -1,1 +1,2 @@
-console.log('hi')
+number = ${{shared.number}};
+console.log(number)
